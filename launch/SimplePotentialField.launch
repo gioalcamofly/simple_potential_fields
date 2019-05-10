@@ -1,0 +1,8 @@
+<launch>
+    <param name="/use_sim_time" value="true" />
+
+    <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_world.launch" />
+
+    <node name="SimplePotentialField" pkg="simple_potential_fields" type="SimplePotentialField" output="screen" />
+
+</launch>
